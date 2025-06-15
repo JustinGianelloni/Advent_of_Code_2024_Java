@@ -10,7 +10,6 @@ import java.util.List;
 public class Part2 {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
-
         String file = "day1.txt";
         Path path = Path.of(ClassLoader.getSystemResource(file).toURI());
         String[] lines = readInput(path);
