@@ -21,8 +21,8 @@ public class Map {
     }
 
     private void initGuard() {
-        for (int y = 0; y < height; y++) {
-            for (int x = 0; x < width; x++) {
+        for (int y = 0; y < height-1; y++) {
+            for (int x = 0; x < width-1; x++) {
                 if (map[y][x] == '^') {
                     guard = new Point(x, y);
                     map[y][x] = 'X';
